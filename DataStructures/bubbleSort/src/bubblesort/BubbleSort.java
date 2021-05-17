@@ -5,27 +5,27 @@ public class BubbleSort {
 
     public static void main(String[] args) {
        
-        int[] intArray = { 20, 35, -15, 7, 55, 1, -22};
+        String[] stringArray = { "aaa", "bbb", "ccc", "ddd", "eee", "fff", "ggg","zzz"};
         
-        for (int lastUnsortedIndex = intArray.length -1; lastUnsortedIndex > 0;
+        for (int lastUnsortedIndex = stringArray.length -1; lastUnsortedIndex > 0;
         lastUnsortedIndex--){
             for(int i =0; i < lastUnsortedIndex; i++){
-                if(intArray[i] > intArray[i + 1]){
-                    swap(intArray, i, i+1);
+                if(stringArray[i].compareTo(stringArray[i + 1])> 0){
+                    swap(stringArray, i, i+1);
                 }   
             }
         }
-        for ( int i = 0 ; i< intArray.length; i++){
-            System.out.println(intArray[i]);
+        for ( int i = 0 ; i< stringArray.length; i++){
+            System.out.println(stringArray[i]);
         }
     }
     
-    public static void swap(int[] array, int i, int j){
+    public static void swap(String[] array, int i, int j){
         
         if (i==j){
             return;
         }
-        int temp = array[i];
+        String temp = array[i];
         array[i]= array[j];
         array[j]=temp;
     }
