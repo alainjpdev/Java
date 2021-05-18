@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.event.*;
 
 
+
 public class ENR extends JFrame implements ActionListener{
   JLabel Lb1;
   JLabel Lb2;
